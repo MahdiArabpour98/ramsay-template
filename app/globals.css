@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+:root {
+  height: 100%;
+}
+
+@layer base {
+  body {
+    @apply bg-[#222] overflow-hidden;
+  }
+}
+.fp-watermark {
+  display: none;
+}
+
+.fp-overflow {
+  overflow-x: hidden;
+}
+
+#fp-nav a span {
+  background: rgb(190 24 93) !important;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(190 24 93) !important;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
